@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+
+        <title></title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+
+        <!-- CSS Reset -->
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css"/>
+
+        <!-- JQuery Functionality -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+
+        <!-- Bootstrap Core CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
+
+        <!-- FontAwesome Functionality -->
+        <script src="https://kit.fontawesome.com/c1cd3c0b1b.js" crossorigin="anonymous"></script>
+
+        <!-- Customized CSS for this page -->
+        <link rel="stylesheet" href="assets/css/global.css"/>
+
+        <!-- Customized JS for this page -->
+        <script type="text/javascript" src="assets/js/jq-include.js"></script>
+
+    </head>
+
+    <body class="bg-light">
+
+        <div data-include="assets/includes/header.html"></div>
+
+        <div id="content" class="container p-3">
+
+            <div id="spacing" class="w-100"> </div>
+
+            <div data-include="assets/includes/info.html"></div>
+
+            <div id="spacing" class="w-100"> </div>
+
+            <div id="spacing" class="container">
+                <hr class="mb-4">
+            </div>
+
+        </div>
+
+        <div data-include="assets/includes/footer.html"></div>
+
+    </body>
+</html>
