@@ -12,3 +12,85 @@
 .carousel-control-next-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23111' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
+
+.navbarAcrylic {
+    background-color: #eff8fff8;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1), 0 1px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbarAcrylic::before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: -8px;
+    right: -8px;
+    bottom: -8px;
+    z-index: -1;
+    background-blend-mode: exclusion;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    filter: url(#blur);
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='8');
+}
+
+.navbarAcrylic::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    box-shadow: 0 0 3px rgba(#000, .1);
+    background-color: rgba(#eff8ff, .8);
+    background-image: url('http://api.thumbr.it/whitenoise-361x370.png?background=ffffff00&noise=a0a0a0&density=35&opacity=10');
+}
+
+.navbarAcrylic.medium::after {
+    background-color: rgba(#eff8ff, .4);
+}
+
+.navbarAcrylic.medium-high::after {
+    background-color: rgba(#eff8ff, .6);
+}
+
+.navbarAcrylicDark {
+    background-color: #14181df8;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1), 0 1px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbarAcrylicDark::before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: -8px;
+    right: -8px;
+    bottom: -8px;
+    z-index: -1;
+    background-blend-mode: exclusion;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    filter: url(#blur);
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='8');
+}
+
+.navbarAcrylicDark::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    box-shadow: 0 0 3px rgba(#000, .1);
+    background-color: rgba(#14181d, .8);
+    background-image: url('http://api.thumbr.it/whitenoise-361x370.png?background=ffffff00&noise=a0a0a0&density=35&opacity=10');
+}
+
+.navbarAcrylicDark.medium::after {
+    background-color: rgba(#14181d, .4);
+}
+
+.navbarAcrylicDark.medium-high::after {
+    background-color: rgba(#14181d, .6);
+}
