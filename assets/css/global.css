@@ -94,3 +94,10 @@
 .navbarAcrylicDark.medium-high::after {
     background-color: rgba(#14181d, .6);
 }
+
+.avatar {
+    background-color: #000;
+    border-radius: 50%;
+    border: 1px;
+    border-color: #000;
+}
