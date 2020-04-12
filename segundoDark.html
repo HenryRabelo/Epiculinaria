@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <title>Receitas Salvas</title>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+
+        <!-- CSS Reset -->
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css"/>
+
+        <!-- JQuery Functionality -->
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js" crossorigin="anonymous"></script>
+
+        <!-- Bootstrap Core JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <!-- FontAwesome Functionality -->
+        <script src="https://kit.fontawesome.com/c1cd3c0b1b.js" crossorigin="anonymous"></script>
+
+        <!-- Customized CSS for this page -->
+        <link rel="stylesheet" href="assets/css/global.css"/>
+
+        <!-- Customized JS for this page -->
+        <script type="text/javascript" src="assets/js/jq-include.js"></script>
+    </head>
+
+    <body class="bg-dark">
+        <nav class="navbar navbar-dark sticky-top navbarAcrylicDark">
+            <a class="nav-item btn btn-lg text-white" role="button" href="#collapseSearch" data-toggle="collapse" aria-expanded="false" aria-controls="collapseSearch">
+                <i class="fas fa-search"></i>
+            </a>
+
+            <a class="nav-item" href="index.html">
+                <img id="epiculinaria-logo" class="rounded d-block" src="assets/img/iconLight.png" alt="Epiculinaria Logo" style="height:40px">
+            </a>
+
+            <a class="nav-item btn btn-lg text-white" href="#">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+        </nav>
+
+        <nav class="navbar navbar-dark fixed-bottom navbarAcrylicDark">
+            <a class="nav-item btn btn-lg text-white" href="#">
+                <i class="fas fa-fire"></i>
+            </a>
+
+            <a class="nav-item btn btn-lg text-white" href="#">
+                <i class="fas fa-clipboard-list"></i>
+            </a>
+
+            <a class="nav-item btn btn-lg text-white" href="#">
+                <i class="fas fa-user"></i>
+            </a>
+        </nav>
+
+        <div id="spacing" class="container">
+            <hr/>
+        </div>
+
+        <div id="collapseSearch" class="collapse">
+            <div class="card">
+                <div class="card-header" style="background-color: #FFFFFF;">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span id="Search" class="input-group-text">
+                                <i class="fas fa-search"></i>
+                            </span>
+                        </div>
+
+                        <input type="text" class="form-control" placeholder="Procure por uma Receita!" aria-label="search-area" aria-describedby="search-area">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="feed" class="container p-3">
+            <div id="info">
+                <h2 class="text-white">Destaques</h2>
+            </div>
+
+            <div id="info">
+                <div id="carouselFeaturedDishes" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="container">
+                                <div class="row row-cols-3">
+                                    <div class="col">
+                                        <div class="card text-white bg-primary h-100">
+                                            <a class="streched-link text-reset text-decoration-none" href="#">
+                                                <h5 class="card-header">Featured</h5>
+                                                <img src="assets/img/thumbnails/dish-example.jpg" class="card-img-top" alt="...">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="card text-white bg-primary h-100">
+                                            <a class="streched-link text-reset text-decoration-none" href="#">
+                                                <h5 class="card-header">Featured</h5>
+                                                <img src="assets/img/thumbnails/dish-example.jpg" class="card-img-top" alt="...">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="card text-white bg-primary h-100">
+                                            <a class="streched-link text-reset text-decoration-none" href="#">
+                                                <h5 class="card-header">Featured</h5>
+                                                <img src="assets/img/thumbnails/dish-example.jpg" class="card-img-top" alt="...">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row row-cols-3">
+                                    <div class="col">
+                                        <div class="card text-white bg-primary h-100">
+                                            <a class="streched-link text-reset text-decoration-none" href="#">
+                                                <h5 class="card-header">Featured</h5>
+                                                <img src="assets/img/thumbnails/dish-example.jpg" class="card-img-top" alt="...">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="card text-white bg-primary h-100">
+                                            <a class="streched-link text-reset text-decoration-none" href="#">
+                                                <h5 class="card-header">Featured</h5>
+                                                <img src="assets/img/thumbnails/dish-example.jpg" class="card-img-top" alt="...">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="card text-white bg-primary h-100">
+                                            <a class="streched-link text-reset text-decoration-none" href="#">
+                                                <h5 class="card-header">Featured</h5>
+                                                <img src="assets/img/thumbnails/dish-example.jpg" class="card-img-top" alt="...">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row row-cols-3">
+                                    <div class="col">
+                                        <div class="card text-white bg-primary h-100">
+                                            <a class="streched-link text-reset text-decoration-none" href="#">
+                                                <h5 class="card-header">Featured</h5>
+                                                <img src="assets/img/thumbnails/dish-example.jpg" class="card-img-top" alt="...">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="card text-white bg-primary h-100">
+                                            <a class="streched-link text-reset text-decoration-none" href="#">
+                                                <h5 class="card-header">Featured</h5>
+                                                <img src="assets/img/thumbnails/dish-example.jpg" class="card-img-top" alt="...">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="card text-white bg-primary h-100">
+                                            <a class="streched-link text-reset text-decoration-none" href="#">
+                                                <h5 class="card-header">Featured</h5>
+                                                <img src="assets/img/thumbnails/dish-example.jpg" class="card-img-top" alt="...">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="carousel-control-prev" href="#carouselFeaturedDishes" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselFeaturedDishes" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            
+            <p></p>
+
+            <div id="info">
+                <h2 class="text-white">Seguindo</h2>
+            </div>
+            
+            <div class="card-deck">
+                <div class="card text-white bg-dark border-primary mb-3" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Chefs</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item bg-dark border-primary"><img class="avatar" src="assets/img/thumbnails/chef.jpg" width="50px" height="50px"><button type="button" class="btn btn-link">Chef Bla Bla</button><button type="button" class="btn btn-primary">Following</button></li>
+                        <li class="list-group-item bg-dark border-primary"><img class="avatar" src="assets/img/thumbnails/chef.jpg" width="50px" height="50px"><button type="button" class="btn btn-link">Chef Tan Tan</button><button type="button" class="btn btn-primary">Following</button></li>
+                        <li class="list-group-item bg-dark border-primary"><img class="avatar" src="assets/img/thumbnails/chef.jpg" width="50px" height="50px"><button type="button" class="btn btn-link">Chef Yog Yog</button><button type="button" class="btn btn-primary">Following</button></li>
+                        <li class="list-group-item bg-dark border-primary"><img class="avatar" src="assets/img/thumbnails/chef.jpg" width="50px" height="50px"><button type="button" class="btn btn-link">Chef Dan Dan</button><button type="button" class="btn btn-primary">Following</button></li>
+                        <li class="list-group-item bg-dark border-primary"><img class="avatar" src="assets/img/thumbnails/chef.jpg" width="50px" height="50px"><button type="button" class="btn btn-link">Chef Fog Fog</button><button type="button" class="btn btn-primary">Following</button></li>
+                        <li class="list-group-item bg-dark border-primary"><img class="avatar" src="assets/img/thumbnails/chef.jpg" width="50px" height="50px"><button type="button" class="btn btn-link">Chef Poi Poi</button><button type="button" class="btn btn-primary">Following</button></li>
+                        <li class="list-group-item bg-dark border-primary"><img class="avatar" src="assets/img/thumbnails/chef.jpg" width="50px" height="50px"><button type="button" class="btn btn-link">Chef Gay Gay</button><button type="button" class="btn btn-primary">Following</button></li>
+                        <li class="list-group-item bg-dark border-primary"><img class="avatar" src="assets/img/thumbnails/chef.jpg" width="50px" height="50px"><button type="button" class="btn btn-link">Chef Les Les</button><button type="button" class="btn btn-primary">Following</button></li>
+                        <li class="list-group-item bg-dark border-primary"><img class="avatar" src="assets/img/thumbnails/chef.jpg" width="50px" height="50px"><button type="button" class="btn btn-link">Chef Ung Ung</button><button type="button" class="btn btn-primary">Following</button></li>
+                        <li class="list-group-item bg-dark border-primary"><img class="avatar" src="assets/img/thumbnails/chef.jpg" width="50px" height="50px"><button type="button" class="btn btn-link">Chef Jay Jay</button><button type="button" class="btn btn-primary">Following</button></li>
+                        <li class="list-group-item bg-dark border-primary"><img class="avatar" src="assets/img/thumbnails/chef.jpg" width="50px" height="50px"><button type="button" class="btn btn-link">Chef Chu Chu</button><button type="button" class="btn btn-primary">Following</button></li>
+                        <li class="list-group-item bg-dark border-primary"><img class="avatar" src="assets/img/thumbnails/chef.jpg" width="50px" height="50px"><button type="button" class="btn btn-link">Chef Pig Pig</button><button type="button" class="btn btn-primary">Following</button></li>
+                    </ul>
+                </div>
+
+                <div class="card text-white bg-dark border-primary mb-3" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Páginas</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item bg-dark border-primary"><img class="avatar" src="assets/img/icon.png" width="50px" height="50px"><button type="button" class="btn btn-link">Tastemade</button><button type="button" class="btn btn-primary">Following</button></li>
+                        <li class="list-group-item bg-dark border-primary"><img class="avatar" src="assets/img/icon.png" width="50px" height="50px"><button type="button" class="btn btn-link">Mais você</button><button type="button" class="btn btn-primary">Following</button></li>
+                        <li class="list-group-item bg-dark border-primary"><img class="avatar" src="assets/img/icon.png" width="50px" height="50px"><button type="button" class="btn btn-link">Masterchef</button><button type="button" class="btn btn-primary">Following</button></li>
+                        <li class="list-group-item bg-dark border-primary"><img class="avatar" src="assets/img/icon.png" width="50px" height="50px"><button type="button" class="btn btn-link">Página</button><button type="button" class="btn btn-primary">Following</button></li>
+                        <li class="list-group-item bg-dark border-primary"><img class="avatar" src="assets/img/icon.png" width="50px" height="50px"><button type="button" class="btn btn-link">Página</button><button type="button" class="btn btn-primary">Following</button></li>
+                        <li class="list-group-item bg-dark border-primary"><img class="avatar" src="assets/img/icon.png" width="50px" height="50px"><button type="button" class="btn btn-link">Página</button><button type="button" class="btn btn-primary">Following</button></li>
+                        <li class="list-group-item bg-dark border-primary"><img class="avatar" src="assets/img/icon.png" width="50px" height="50px"><button type="button" class="btn btn-link">Página</button><button type="button" class="btn btn-primary">Following</button></li>
+                        <li class="list-group-item bg-dark border-primary"><img class="avatar" src="assets/img/icon.png" width="50px" height="50px"><button type="button" class="btn btn-link">Página</button><button type="button" class="btn btn-primary">Following</button></li>
+                        <li class="list-group-item bg-dark border-primary"><img class="avatar" src="assets/img/icon.png" width="50px" height="50px"><button type="button" class="btn btn-link">Página</button><button type="button" class="btn btn-primary">Following</button></li>
+                        <li class="list-group-item bg-dark border-primary"><img class="avatar" src="assets/img/icon.png" width="50px" height="50px"><button type="button" class="btn btn-link">Página</button><button type="button" class="btn btn-primary">Following</button></li>
+                        <li class="list-group-item bg-dark border-primary"><img class="avatar" src="assets/img/icon.png" width="50px" height="50px"><button type="button" class="btn btn-link">Página</button><button type="button" class="btn btn-primary">Following</button></li>
+                        <li class="list-group-item bg-dark border-primary"><img class="avatar" src="assets/img/icon.png" width="50px" height="50px"><button type="button" class="btn btn-link">Página</button><button type="button" class="btn btn-primary">Following</button></li>
+                    </ul>
+                </div>
+
+                <div class="card text-white bg-dark border-primary mb-3" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Chefs</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item bg-dark border-primary"><img class="avatar" src="assets/img/iconDark.png" width="50px" height="50px"><button type="button" class="btn btn-link">User</button><button type="button" class="btn btn-primary">Following</button></li>
+                        <li class="list-group-item bg-dark border-primary"><img class="avatar" src="assets/img/iconLight.png" width="50px" height="50px"><button type="button" class="btn btn-link">User</button><button type="button" class="btn btn-primary">Following</button></li>
+                        <li class="list-group-item bg-dark border-primary"><img class="avatar" src="assets/img/iconDark.png" width="50px" height="50px"><button type="button" class="btn btn-link">User</button><button type="button" class="btn btn-primary">Following</button></li>
+                        <li class="list-group-item bg-dark border-primary"><img class="avatar" src="assets/img/iconLight.png" width="50px" height="50px"><button type="button" class="btn btn-link">User</button><button type="button" class="btn btn-primary">Following</button></li>
+                        <li class="list-group-item bg-dark border-primary"><img class="avatar" src="assets/img/iconDark.png" width="50px" height="50px"><button type="button" class="btn btn-link">User</button><button type="button" class="btn btn-primary">Following</button></li>
+                        <li class="list-group-item bg-dark border-primary"><img class="avatar" src="assets/img/iconLight.png" width="50px" height="50px"><button type="button" class="btn btn-link">User</button><button type="button" class="btn btn-primary">Following</button></li>
+                        <li class="list-group-item bg-dark border-primary"><img class="avatar" src="assets/img/iconDark.png" width="50px" height="50px"><button type="button" class="btn btn-link">User</button><button type="button" class="btn btn-primary">Following</button></li>
+                        <li class="list-group-item bg-dark border-primary"><img class="avatar" src="assets/img/iconLight.png" width="50px" height="50px"><button type="button" class="btn btn-link">User</button><button type="button" class="btn btn-primary">Following</button></li>
+                        <li class="list-group-item bg-dark border-primary"><img class="avatar" src="assets/img/iconDark.png" width="50px" height="50px"><button type="button" class="btn btn-link">User</button><button type="button" class="btn btn-primary">Following</button></li>
+                        <li class="list-group-item bg-dark border-primary"><img class="avatar" src="assets/img/iconLight.png" width="50px" height="50px"><button type="button" class="btn btn-link">User</button><button type="button" class="btn btn-primary">Following</button></li>
+                        <li class="list-group-item bg-dark border-primary"><img class="avatar" src="assets/img/iconDark.png" width="50px" height="50px"><button type="button" class="btn btn-link">User</button><button type="button" class="btn btn-primary">Following</button></li>
+                        <li class="list-group-item bg-dark border-primary"><img class="avatar" src="assets/img/iconLight.png" width="50px" height="50px"><button type="button" class="btn btn-link">User</button><button type="button" class="btn btn-primary">Following</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="spacing" class="container">
+            <hr class="mb-4" />
+        </div>
+        <div id="spacing" class="container">
+            <hr class="mb-4" />
+        </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    </body>
+</html>
