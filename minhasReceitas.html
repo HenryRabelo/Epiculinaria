@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
     <head>
-        <title>Minhas Receitas</title>
 
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title> Minhas Receitas </title>
+
+        <!-- Meta Tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
         <link rel="icon" type="image/png" href="assets/img/favicon.ico">
 
@@ -13,13 +14,13 @@
         <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css"/>
 
         <!-- JQuery Functionality -->
-        <script src="https://code.jquery.com/jquery-3.5.0.min.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
 
         <!-- Bootstrap Core JS -->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!-- Bootstrap Core CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
 
         <!-- FontAwesome Functionality -->
         <script src="https://kit.fontawesome.com/c1cd3c0b1b.js" crossorigin="anonymous"></script>
@@ -29,21 +30,32 @@
 
         <!-- Customized JS for this page -->
         <script type="text/javascript" src="assets/js/jq-include.js"></script>
+
     </head>
 
     <body class="bg-light">
+
         <nav class="navbar navbar-light sticky-top navbarAcrylic">
-            <a class="nav-item btn btn-lg" role="button" href="#collapseSearch" data-toggle="collapse" aria-expanded="false" aria-controls="collapseSearch">
-                <i class="fas fa-search"></i>
+
+            <a class="nav-item btn btn-lg" href="index.html">
+                <i class="fas fa-chevron-left"></i>
             </a>
 
             <a class="nav-item" href="index.html">
                 <img id="epiculinaria-logo" class="rounded d-block" src="assets/img/iconDark.png" alt="Epiculinaria Logo" style="height:40px">
             </a>
 
-            <a class="nav-item btn btn-lg" href="#">
-                <i class="fas fa-shopping-cart"></i>
-            </a>
+            <div class="btn-group">
+                <button type="button" class="btn btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <button class="dropdown-item" type="button">Filtros</button>
+                    <button class="dropdown-item" type="button">Mais Recentes</button>
+                    <button class="dropdown-item" type="button">Sugestões</button>
+                </div>
+            </div>
+
         </nav>
 
         <nav  class="navbar navbar-light fixed-bottom navbarAcrylic">
@@ -208,7 +220,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -269,11 +281,11 @@
             <hr class="mb-4" />
         </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
     </body>
 </html>
