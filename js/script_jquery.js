@@ -77,7 +77,7 @@ $(document).ready(function(){
 	break;
 
 	default:
-	alert("Nenhum produto com este nome");
+	//alert("Nenhum produto com este nome");
 	
 }
 
