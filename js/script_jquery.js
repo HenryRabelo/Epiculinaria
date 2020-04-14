@@ -31,6 +31,11 @@ $(document).ready(function(){
     }
        });
     
+	$(document).keypress(function(e){
+	//	var t = e.which;
+		if(e.which==13)
+			$('#Search').click();
+		});
 
 	$(document).on('click','.close', function(){
 		$('.modal-container').hide();
@@ -40,7 +45,7 @@ $(document).ready(function(){
 	var i=parseInt('0');
 	var vetor = new Array();
 
-	$(document).on('click','#Search',function(){
+	$(document).on('click','#Search',function(e){
 		var busca =document.getElementById('search-input').value;
     switch(busca){
 	case "macarrao":
@@ -78,5 +83,6 @@ $(document).ready(function(){
 
 
 	});
+
 
 });
