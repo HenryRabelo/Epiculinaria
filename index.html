@@ -27,11 +27,10 @@
 
         <!-- Customized CSS for this page -->
         <link rel="stylesheet" href="assets/css/global.css"/>
-        <script src="js/jquery.js"></script>
-        <script src="js/script_jquery.js"></script>
 
         <!-- Customized JS for this page -->
         <script type="text/javascript" src="assets/js/jq-include.js"></script>
+        <script type="text/javascript" src="js/script_jquery.js"></script>
 
     </head>
 
@@ -44,55 +43,19 @@
             </a>
 
             <a class="nav-item" href="index.html">
-                <img id="epiculinaria-logo" class="rounded d-block" src="assets/img/iconDark.png" alt="Epiculinaria Logo" style="height:40px">
+                <img id="epiculinaria-logo" class="rounded d-block" src="assets/img/app-icons/iconDark.png" alt="Epiculinaria Logo" style="height:40px">
             </a>
 
             <a id=card-food class="nav-item btn btn-lg" href="#">
                 <i class="fas fa-shopping-cart"></i>
                 <div class="modal-container">
                     <div class="modal-cont">
-                    <table id=add-coisa></table>
+                        <table id=add-coisa></table>
+                    </div>
                 </div>
-            </div>
-                <style type="text/css">
-                .modal-container{
-                    max-height: 0px;
-                }
-                .modal-cont{
-                font-size: 15px;
-                width: 100%;
-                background-color: #c8c8c8bf;
-                height: auto;
-                border-radius: 10px;
-               
-                   }
-                   .imagem-produto{
-                    width: 40px;
-                    height: 40px;
-                   }
-                </style>
             </a>
 
         </nav>
-
-        <nav class="navbar navbar-light fixed-bottom navbarAcrylic">
-            <a class="nav-item btn btn-lg" href="#">
-                <i class="fas fa-fire"></i>
-            </a>
-
-            <a class="nav-item btn btn-lg" href="lista.html">
-                <i class="fas fa-clipboard-list"></i>
-            </a>
-
-            <a class="nav-item btn btn-lg" href="perfil.html">
-                <i class="fas fa-user"></i>
-            </a>
-        </nav>
-
-        <div id="spacing" class="container">
-            <hr/>
-        </div>
-
         <div id="collapseSearch" class="collapse">
             <div class="card">
                 <div class="card-header">
@@ -449,7 +412,24 @@
         </div>
 
         <div id="spacing" class="container">
-            <hr class="mb-4" />
+            <hr class="my-4" />
         </div>
+
+        <div id="footer">
+            <nav class="navbar navbar-light fixed-bottom navbarAcrylic">
+                <a class="nav-item btn btn-lg" href="#">
+                    <i class="fas fa-fire"></i>
+                </a>
+
+                <a class="nav-item btn btn-lg" href="lista.html">
+                    <i class="fas fa-clipboard-list"></i>
+                </a>
+
+                <a class="nav-item btn btn-lg" href="perfil.html">
+                    <i class="fas fa-user"></i>
+                </a>
+            </nav>
+        </div>
+
     </body>
 </html>

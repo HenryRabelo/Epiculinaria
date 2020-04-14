@@ -18,7 +18,7 @@ $(document).ready(function(){
         var j= parseInt('0');
         
         for(j=0;j<i;j++){
-        	aux= aux + ("<tr><td><img class='imagem-produto' src=assets/img/img-produto/"+vetor[j]+".jpeg></td><td><p>"+vetor[j]+"</p></td></tr>");
+        	aux= aux + ("<tr><td><img class='imagem-produto' src=assets/img/produtos/"+vetor[j]+".jpeg></td><td><p>"+vetor[j]+"</p></td></tr>");
         }
         conteudo.innerHTML=aux;
     }
