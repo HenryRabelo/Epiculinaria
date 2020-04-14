@@ -27,6 +27,8 @@
 
         <!-- Customized CSS for this page -->
         <link rel="stylesheet" href="assets/css/global.css"/>
+        <script src="js/jquery.js"></script>
+        <script src="js/script_jquery.js"></script>
 
         <!-- Customized JS for this page -->
         <script type="text/javascript" src="assets/js/jq-include.js"></script>
@@ -45,8 +47,30 @@
                 <img id="epiculinaria-logo" class="rounded d-block" src="assets/img/iconDark.png" alt="Epiculinaria Logo" style="height:40px">
             </a>
 
-            <a class="nav-item btn btn-lg" href="#">
+            <a id=card-food class="nav-item btn btn-lg" href="#">
                 <i class="fas fa-shopping-cart"></i>
+                <div class="modal-container">
+                    <div class="modal-cont">
+                    <table id=add-coisa></table>
+                </div>
+            </div>
+                <style type="text/css">
+                .modal-container{
+                    max-height: 0px;
+                }
+                .modal-cont{
+                font-size: 15px;
+                width: 100%;
+                background-color: #c8c8c8bf;
+                height: auto;
+                border-radius: 10px;
+               
+                   }
+                   .imagem-produto{
+                    width: 40px;
+                    height: 40px;
+                   }
+                </style>
             </a>
 
         </nav>
@@ -78,7 +102,7 @@
                                 <i class="fas fa-search"></i>
                             </span>
                         </div>
-                        <input type="text" class="form-control" placeholder="Procure por uma Receita!" aria-label="search-area" aria-describedby="search-area">
+                        <input type="text" id=search-input class="form-control" placeholder="Procure por uma Receita!" aria-label="search-area" aria-describedby="search-area">
                     </div>
                 </div>
             </div>
