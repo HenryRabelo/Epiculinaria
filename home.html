@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
     <head>
+
         <title> Epiculinaria </title>
 
         <!-- Meta Tags -->
@@ -30,16 +31,19 @@
         <!-- Customized JS for this page -->
         <script type="text/javascript" src="assets/js/jq-include.js"></script>
         <script type="text/javascript" src="js/script_jquery.js"></script>
+
     </head>
 
     <body class="bg-light">
+
         <nav class="navbar navbar-light sticky-top navbarAcrylic">
+
             <a class="nav-item btn btn-lg" role="button" href="#collapseSearch" data-toggle="collapse" aria-expanded="false" aria-controls="collapseSearch">
                 <i class="fas fa-search"></i>
             </a>
 
-            <a class="nav-item btn btn-lg" href="feed.html">
-                <img id="epiculinaria-logo" class="rounded d-block" src="assets/img/app-icons/icon.png" alt="Epiculinaria Logo" style="height:40px">
+            <a class="nav-item" href="home.html">
+                <img id="food-roster-logo" class="rounded d-block" src="assets/img/app-icons/icon.png" alt="Food Roster" style="height:40px">
             </a>
 
             <a id=card-food class="nav-item btn btn-lg" href="#">
@@ -50,32 +54,8 @@
                     </div>
                 </div>
             </a>
+
         </nav>
-
-        <div id="footer">
-            <nav class="navbar navbar-light fixed-bottom navbarAcrylic">
-                <a class="nav-item btn btn-lg" href="opcoes.html">
-                    <i class="fas fa-bars"></i>
-                </a>
-                
-                <a class="nav-item btn btn-lg" href="calorias.html">
-                    <i class="fas fa-heartbeat"></i>
-                </a>
-
-                <a class="nav-item btn btn-lg" href="#">
-                    <i class="fas fa-plus-square"></i>
-                </a>
-
-                <a class="nav-item btn btn-lg" href="lista.html">
-                    <i class="fas fa-clipboard-list"></i>
-                </a>
-
-                <a class="nav-item btn btn-lg" href="perfil.html">
-                    <i class="fas fa-user-circle"></i>
-                </a>
-            </nav>
-        </div>
-
         <div id="collapseSearch" class="collapse">
             <div class="card">
                 <div class="card-header">
@@ -95,7 +75,8 @@
 
         <div id="feed" class="container p-3">
             <div id="info">
-                <h2>Categorias</h2>
+                <h2> Categorias </h2>
+
                 <button type="button" class="btn btn-lg btn-outline-danger"><i class="fas fa-pizza-slice"></i> Massas</button>
                 <button type="button" class="btn btn-lg btn-outline-danger"><i class="fas fa-drumstick-bite"></i> Carnes</button>
                 <button type="button" class="btn btn-lg btn-outline-danger"><i class="fas fa-cocktail"></i> Bebidas</button>
@@ -105,13 +86,14 @@
                 <button type="button" class="btn btn-lg btn-outline-danger"><i class="fas fa-snowflake"></i> Frios</button>
                 <button type="button" class="btn btn-lg btn-outline-danger"><i class="fas fa-cookie-bite"></i> Sobremesas</button>
                 <button type="button" class="btn btn-lg btn-outline-danger"><i class="fas fa-plus"></i></button>
+
             </div>
 
             <div id="spacing" class="container">
                 <hr class="my-4" />
             </div>
 
-            <h2>Feed</h2>
+            <h2> Receitas </h2>
 
             <div class="d-flex justify-content-center">
                 <div class="btn-group" role="group">
@@ -209,10 +191,142 @@
                     </div>
                 </div>
             </div>
+
         </div>
 
         <div id="spacing" class="container">
             <hr class="my-4" />
         </div>
+
+        <div id="modals" class="container">
+
+            <div id="RegisterModal" class="modal fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="RegisterModalTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+
+                    <div class="modal-content border-info">
+                        <div class="modal-header bg-info">
+
+                            <h5 class="modal-title text-white" id="RegisterModalTitle">
+                                Opções de conta:
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+
+                        </div>
+                        <div class="modal-body">
+
+                            <a class="btn btn-lg btn-danger btn-block my-4" href="perfil.html" role="button">
+                                <div class="row justify-content-md-center">
+                                    <div class="col col-lg-1">
+                                        <i class="fas fa-user-circle"></i>
+                                    </div>
+                                    <div class="col align-self-center" style="margin-right:100px">
+                                        Meu perfil
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="btn btn-lg btn-danger btn-block my-4" href="minhasReceitas.html" role="button">
+                                <div class="row justify-content-md-center">
+                                    <div class="col col-lg-1">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="col align-self-center" style="margin-right:100px">
+                                        Receitas Salvas
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="btn btn-lg btn-danger btn-block my-4" href="seguindo.html" role="button">
+                                <div class="row justify-content-md-center">
+                                    <div class="col col-lg-1">
+                                        <i class="fas fa-users"></i>
+                                    </div>
+                                    <div class="col align-self-center" style="margin-right:100px">
+                                        Seguindo
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="btn btn-lg btn-danger btn-block my-4" href="lista.html" role="button">
+                                <div class="row justify-content-md-center">
+                                    <div class="col col-lg-1">
+                                        <i class="fas fa-clipboard-list"></i>
+                                    </div>
+                                    <div class="col align-self-center" style="margin-right:100px">
+                                        Lista
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="btn btn-lg btn-danger btn-block my-4" href="#" role="button">
+                                <div class="row justify-content-md-center">
+                                    <div class="col col-lg-1">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                    <div class="col align-self-center" style="margin-right:100px">
+                                        Carrinho
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="btn btn-lg btn-danger btn-block my-4" href="cadastro.html" role="button">
+                                <div class="row justify-content-md-center">
+                                    <div class="col col-lg-1">
+                                        <i class="fas fa-user-check"></i>
+                                    </div>
+                                    <div class="col align-self-center" style="margin-right:100px">
+                                        Seja um chef
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="btn btn-lg btn-danger btn-block my-4" href="#" role="button">
+                                <div class="row justify-content-md-center">
+                                    <div class="col col-lg-1">
+                                        <i class="far fa-life-ring"></i>
+                                    </div>
+                                    <div class="col align-self-center" style="margin-right:100px">
+                                        Ajuda
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="btn btn-lg btn-danger btn-block my-4" href="#" role="button">
+                                <div class="row justify-content-md-center">
+                                    <div class="col col-lg-1">
+                                        <i class="fas fa-money-bill-wave"></i>
+                                    </div>
+                                    <div class="col align-self-center" style="margin-right:100px">
+                                        Doações
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div id="footer">
+            <nav class="navbar navbar-light fixed-bottom navbarAcrylic">
+                <a class="nav-item btn btn-lg" href="calorias.html">
+                    <i class="fas fa-fire"></i>
+                </a>
+
+                <a class="nav-item btn btn-lg" href="lista.html">
+                    <i class="fas fa-clipboard-list"></i>
+                </a>
+
+                <a class="nav-item btn btn-lg" data-toggle="modal" data-target="#RegisterModal" role="button">
+                    <i class="fas fa-user"></i>
+                </a>
+            </nav>
+        </div>
+
     </body>
 </html>
