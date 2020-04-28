@@ -192,9 +192,9 @@
 
             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Como fazer?</h5>
+                    <div class="modal-content border-info">
+                        <div class="modal-header bg-info">
+                            <h5 class="modal-title text-white" id="exampleModalLabel">Como fazer?</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -214,7 +214,7 @@
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
@@ -222,14 +222,34 @@
 
             <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Ingredientes</h5>
+                    <div class="modal-content border-info">
+                        <div class="modal-header bg-info">
+                            <h5 class="modal-title text-white" id="exampleModalLabel">Ingredientes</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div class="modal-body">
+
+                            <div class="input-group mb-2">
+                                <select class="custom-select" id="porcoes" aria-label="Quantas porções você quer servir?">
+                                    <option selected>Quantas porções você quer servir?</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                                <div class="input-group-append">
+                                    <button class="btn btn-info" type="button">OK</button>
+                                </div>
+                            </div>
+
                             <ul style="list-style-type:circle">
                                 <li>Coffee</li>
                                 <li>Tea</li>
@@ -237,7 +257,7 @@
                             </ul>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
