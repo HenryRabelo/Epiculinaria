@@ -49,7 +49,7 @@ $(document).ready(function(){
 		var busca =document.getElementById('search-input').value;
     switch(busca){
 	case "macarrao":
-	vetor[i]="Macarrão";
+	vetor[i]="Macarrao";
 	alert("Inseriu");
 	i++;
 	//alert("tem");
