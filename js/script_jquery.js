@@ -1,11 +1,11 @@
 $(document).ready(function(){
-	$('.modal-container').hide();
+	$('#modal-container').hide();
 	
 	var conteudo = document.getElementById('add-coisa');
 	var show=parseInt('0');
 	$(document).on('click','#card-food',function(){
        if(show != 0){
-        $('.modal-container').show();
+        $('#modal-container').show();
         //conteudo.innerHTML= vetor[i-1];
         if(i==0){
         	conteudo.innerHTML="<p>Card vazio</p>";
@@ -26,7 +26,7 @@ $(document).ready(function(){
 	}
 
     else{
-    	 $('.modal-container').hide();
+    	 $('#modal-container').hide();
     	 show++;
     }
        });
@@ -38,7 +38,7 @@ $(document).ready(function(){
 		});
 
 	$(document).on('click','.close', function(){
-		$('.modal-container').hide();
+		$('#modal-container').hide();
 	});
 
 	var card= new Array();

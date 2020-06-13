@@ -102,10 +102,10 @@
     border-color: #000;
 }
 
-.modal-container{
+#modal-container{
     max-height: 0px;
 }
-.modal-cont{
+#modal-cont{
     font-size: 15px;
     width: 100%;
     background-color: #c8c8c8bf;
