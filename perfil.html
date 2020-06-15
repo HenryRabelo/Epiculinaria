@@ -31,7 +31,7 @@
     </head>
 
     <body class="bg-light">
-        <nav class="navbar navbar-light sticky-top navbarAcrylic">
+        <nav class="navbar navbar-light sticky-top navLight">
 
             <a class="nav-item btn btn-lg" href="home.html">
                 <i class="fas fa-chevron-left"></i>
@@ -56,21 +56,22 @@
                     </button>
                 </div>
             </div>
-
         </nav>
 
-        <div id="options" class="container p-3">
-            <div class="card bg-info">
-                <div class="card-header">
-                    <img src="assets/img/thumbnails/prop-example.jpg" class="card-img-top" alt="..." height="300"/>
-                </div>
-                <div class="card-body">
-                    <img class="avatar" src="assets/img/app-icons/iconLight.png" style="width:80px; height:80px"/>
-                    <button type="button" class="btn btn-info btn-lg"> Meu Nome </button>
-                    <button type="button" class="btn btn-info"><i class="fas fa-receipt"></i> 7 Receitas</button>
-                    <button type="button" class="btn btn-info"><i class="fas fa-user-friends"></i> 1325 Seguidores</button>
-                    <button type="button" class="btn btn-info"><i class="fas fa-users"></i> 672 Seguindo</button>
-                </div>
+        <div class="text-center" style="background-image: url('assets/img/thumbnails/prop-example.jpg'); background-attachment: fixed; background-size: 110%;">
+            <br>
+            <img class="avatar" src="assets/img/app-icons/iconLight.png" style="width: 140px; height: 140px; box-shadow: 0 0 50px;"/>
+            <br><br><br>
+            <div class="divLoginLight">
+                <button type="button" class="btn btn-link"> Richard Borges </button>
+                <br>
+                ribborges
+                <br>
+                <br>
+                <button type="button" class="btn border-primary"><i class="fas fa-receipt"></i> 7 Receitas</button>
+                <button type="button" class="btn border-primary"><i class="fas fa-user-friends"></i> 1325 Seguidores</button>
+                <button type="button" class="btn border-primary"><i class="fas fa-users"></i> 672 Seguindo</button>
+                <br><br>
             </div>
         </div>
 
@@ -79,16 +80,31 @@
         </div>
 
         <div class="container p-3">
-            <h2>Minhas receitas</h2>
-
             <div class="card my-4 mx-auto" style="max-width: 540px;">
                 <div class="card-header">
                     <div class="d-flex flex-row bd-highlight justify-content-between">
-
                         <div class="d-inline-flex bd-highlight">
                             <img class="avatar" src="assets/img/app-icons/iconLight.png" style="width:50px; height:50px"/>
 
-                            <button type="button" class="btn btn-link text-reset"> Meu Nome </button>
+                            <button type="button" class="btn btn-link text-reset"> Richard Borges </button>
+                        </div>
+                    </div>
+                </div>
+
+                <img src="assets/img/thumbnails/dish-example.jpg" class="card-img-top" alt="..."/>
+
+                <div class="card-body">
+                    <h5 class="card-title"> Guioza </h5>
+
+                    <p class="card-text">
+                        Receita especialmente feita com dapibus ac facilisis in vestibulum at eros jras justo odio.
+                    </p>
+
+                    <button type="button" class="btn btn-light border-primary"> Ler Mais </button>
+                    
+                    <div class="d-flex flex-row bd-highlight justify-content-between">
+                        <div class="d-inline-flex bd-highlight">
+                            <p class="card-text pt-3"><small class="text-muted"> 3 minutos atrás </small></p>
                         </div>
 
                         <div class="d-inline-flex bd-highlight">
@@ -104,19 +120,9 @@
                                 <i class="fas fa-share-alt"></i>
                             </button>
                         </div>
-
                     </div>
                 </div>
-                <img src="assets/img/thumbnails/dish-example.jpg" class="card-img-top" alt="..."/>
-                <div class="card-body">
-                    <h5 class="card-title"> Guioza </h5>
-                    <p class="card-text">
-                        Receita especialmente feita com dapibus ac facilisis in vestibulum at eros jras justo odio.
-                    </p>
-                    <p class="card-text"><small class="text-muted"> 3 minutos atrás </small></p>
-                </div>
             </div>
-
         </div>
 
         <div id="spacing" class="container">
@@ -238,9 +244,9 @@
         </div>
 
         <div id="footer">
-            <nav class="navbar navbar-light fixed-bottom navbarAcrylic">
+            <nav class="navbar navbar-light fixed-bottom navLight">
                 <a class="nav-item btn btn-lg" href="calorias.html">
-                    <i class="fas fa-fire"></i>
+                    <i class="fas fa-heartbeat"></i>
                 </a>
 
                 <a class="nav-item btn btn-lg" href="lista.html">

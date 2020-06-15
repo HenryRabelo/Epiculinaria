@@ -34,9 +34,7 @@
     </head>
 
     <body class="bg-light">
-
-        <nav class="navbar navbar-light sticky-top navbarAcrylic">
-
+        <nav class="navbar navbar-light sticky-top navLight">
             <a class="nav-item btn btn-lg" role="button" href="#collapseSearch" data-toggle="collapse" aria-expanded="false" aria-controls="collapseSearch">
                 <i class="fas fa-search"></i>
             </a>
@@ -53,8 +51,8 @@
                     </div>
                 </div>
             </a>
-
         </nav>
+        
         <div id="collapseSearch" class="collapse">
             <div class="card">
                 <div class="card-header">
@@ -72,7 +70,7 @@
             </div>
         </div>
 
-        <div id="info" class="container">
+        <div id="primary" class="container">
 
             <div class="card my-4">
                 <div class="card-header">
@@ -87,15 +85,15 @@
                     <div class="card-body">
 
                         <div class="d-flex flex-wrap justify-content-around">
-                            <button type="button" class="btn btn-lg btn-outline-info"><i class="fas fa-pizza-slice"></i> Massas </button>
-                            <button type="button" class="btn btn-lg btn-outline-info"><i class="fas fa-drumstick-bite"></i> Carnes </button>
-                            <button type="button" class="btn btn-lg btn-outline-info"><i class="fas fa-cocktail"></i> Bebidas </button>
-                            <button type="button" class="btn btn-lg btn-outline-info"><i class="fas fa-carrot"></i> Vegana </button>
-                            <button type="button" class="btn btn-lg btn-outline-info"><i class="fas fa-leaf"></i> Saladas </button>
-                            <button type="button" class="btn btn-lg btn-outline-info"><i class="fas fa-hamburger"></i> Lanches </button>
-                            <button type="button" class="btn btn-lg btn-outline-info"><i class="fas fa-snowflake"></i> Frios </button>
-                            <button type="button" class="btn btn-lg btn-outline-info"><i class="fas fa-cookie-bite"></i> Sobremesas </button>
-                            <button type="button" class="btn btn-lg btn-outline-info"><i class="fas fa-plus"></i></button>
+                            <button type="button" class="btn btn-lg btn-outline-primary"><i class="fas fa-pizza-slice"></i> Massas </button>
+                            <button type="button" class="btn btn-lg btn-outline-primary"><i class="fas fa-drumstick-bite"></i> Carnes </button>
+                            <button type="button" class="btn btn-lg btn-outline-primary"><i class="fas fa-cocktail"></i> Bebidas </button>
+                            <button type="button" class="btn btn-lg btn-outline-primary"><i class="fas fa-carrot"></i> Vegana </button>
+                            <button type="button" class="btn btn-lg btn-outline-primary"><i class="fas fa-leaf"></i> Saladas </button>
+                            <button type="button" class="btn btn-lg btn-outline-primary"><i class="fas fa-hamburger"></i> Lanches </button>
+                            <button type="button" class="btn btn-lg btn-outline-primary"><i class="fas fa-snowflake"></i> Frios </button>
+                            <button type="button" class="btn btn-lg btn-outline-primary"><i class="fas fa-cookie-bite"></i> Sobremesas </button>
+                            <button type="button" class="btn btn-lg btn-outline-primary"><i class="fas fa-plus"></i></button>
                         </div>
 
                     </div>
@@ -109,21 +107,18 @@
         </div>
 
         <div id="feed" class="container p-3">
-
-            <h2> Receitas </h2>
-
             <div class="nav btn-group mx-auto" id="pills-tab" role="tablist" style="max-width: 350px">
-                <a class="nav-item nav-link btn btn-outline-info active" id="pills-recent-tab" data-toggle="pill" href="#pills-recent" role="tab" aria-controls="pills-recent" aria-selected="true">
+                <a class="nav-item nav-link btn btn-outline-primary active" id="pills-recent-tab" data-toggle="pill" href="#pills-recent" role="tab" aria-controls="pills-recent" aria-selected="true">
                     <i class="fas fa-concierge-bell"></i>
                     Recentes
                 </a>
 
-                <a class="nav-item nav-link btn btn-outline-info" id="pills-trending-tab" data-toggle="pill" href="#pills-trending" role="tab" aria-controls="pills-trending" aria-selected="false">
+                <a class="nav-item nav-link btn btn-outline-primary" id="pills-trending-tab" data-toggle="pill" href="#pills-trending" role="tab" aria-controls="pills-trending" aria-selected="false">
                     <i class="fas fa-poll"></i>
                     Destaques
                 </a>
 
-                <a class="nav-item nav-link btn btn-outline-info" id="pills-chefs-tab" data-toggle="pill" href="#pills-chefs" role="tab" aria-controls="pills-chefs" aria-selected="false">
+                <a class="nav-item nav-link btn btn-outline-primary" id="pills-chefs-tab" data-toggle="pill" href="#pills-chefs" role="tab" aria-controls="pills-chefs" aria-selected="false">
                     <i class="fas fa-wine-glass-alt"></i>
                     Chefs
                 </a>
@@ -133,29 +128,27 @@
 
                     <div class="card my-4 mx-auto" style="max-width: 540px;">
                         <div class="card-header">
-
-														<div class="d-flex flex-row bd-highlight justify-content-between">
-
+							<div class="d-flex flex-row bd-highlight justify-content-between">
                                 <div class="d-inline-flex bd-highlight">
                                     <img class="avatar" src="assets/img/thumbnails/chef.jpg" style="width:50px; height:50px"/>
 
                                     <button type="button" class="btn btn-link text-reset"> Chef Dan Dan </button>
                                 </div>
-
                             </div>
-
                         </div>
-                        <img src="assets/img/produtos/Macarrao.jpeg" class="card-img-top" alt="..."/>
-                        <div class="card-body">
 
+                        <img src="assets/img/produtos/Macarrao.jpeg" class="card-img-top" alt="..."/>
+
+                        <div class="card-body">
                             <h5 class="card-title"> Macarrão com Shitake </h5>
+
                             <p class="card-text">
                                 Receita especialmente feita com dapibus ac facilisis in vestibulum at eros jras justo odio.
                             </p>
 
-														<button type="button" class="btn btn-info"> Ler Mais </button>
-														<div class="d-flex flex-row bd-highlight justify-content-between">
-
+                            <button type="button" class="btn btn-light border-primary"> Ler Mais </button>
+                            
+							<div class="d-flex flex-row bd-highlight justify-content-between">
                                 <div class="d-inline-flex bd-highlight">
                                     <p class="card-text pt-3"><small class="text-muted"> 3 minutos atrás </small></p>
                                 </div>
@@ -173,9 +166,7 @@
                                         <i class="fas fa-share-alt"></i>
                                     </button>
                                 </div>
-
-                            	</div>
-
+                            </div>
                         </div>
                     </div>
 
@@ -201,7 +192,7 @@
                                 Receita especialmente feita com dapibus ac facilisis in vestibulum at eros jras justo odio.
                             </p>
 
-														<button type="button" class="btn btn-info"> Ler Mais </button>
+														<button type="button" class="btn btn-light border-primary"> Ler Mais </button>
 														<div class="d-flex flex-row bd-highlight justify-content-between">
 
                                 <div class="d-inline-flex bd-highlight">
@@ -253,7 +244,7 @@
                                 Receita especialmente feita com dapibus ac facilisis in vestibulum at eros jras justo odio.
                             </p>
 
-														<button type="button" class="btn btn-info"> Ler Mais </button>
+														<button type="button" class="btn btn-light border-primary"> Ler Mais </button>
 														<div class="d-flex flex-row bd-highlight justify-content-between">
 
                                 <div class="d-inline-flex bd-highlight">
@@ -301,7 +292,7 @@
                                 Receita especialmente feita com dapibus ac facilisis in vestibulum at eros jras justo odio.
                             </p>
 
-                            <button type="button" class="btn btn-info"> Ler Mais </button>
+                            <button type="button" class="btn btn-light border-primary"> Ler Mais </button>
 														<div class="d-flex flex-row bd-highlight justify-content-between">
 
                                 <div class="d-inline-flex bd-highlight">
@@ -356,7 +347,7 @@
                                 Receita especialmente feita com dapibus ac facilisis in vestibulum at eros jras justo odio.
                             </p>
 
-														<button type="button" class="btn btn-info"> Ler Mais </button>
+														<button type="button" class="btn btn-light border-primary"> Ler Mais </button>
 														<div class="d-flex flex-row bd-highlight justify-content-between">
 
                                 <div class="d-inline-flex bd-highlight">
@@ -404,7 +395,7 @@
                                 Receita especialmente feita com dapibus ac facilisis in vestibulum at eros jras justo odio.
                             </p>
 
-                            <button type="button" class="btn btn-info"> Ler Mais </button>
+                            <button type="button" class="btn btn-light border-primary"> Ler Mais </button>
 														<div class="d-flex flex-row bd-highlight justify-content-between">
 
                                 <div class="d-inline-flex bd-highlight">
@@ -452,7 +443,7 @@
                                 Receita especialmente feita com dapibus ac facilisis in vestibulum at eros jras justo odio.
                             </p>
 
-                            <button type="button" class="btn btn-info"> Ler Mais </button>
+                            <button type="button" class="btn btn-light border-primary"> Ler Mais </button>
 														<div class="d-flex flex-row bd-highlight justify-content-between">
 
                                 <div class="d-inline-flex bd-highlight">
@@ -504,7 +495,7 @@
                                 Receita especialmente feita com dapibus ac facilisis in vestibulum at eros jras justo odio.
                             </p>
 
-                            <button type="button" class="btn btn-info"> Ler Mais </button>
+                            <button type="button" class="btn btn-light border-primary"> Ler Mais </button>
 														<div class="d-flex flex-row bd-highlight justify-content-between">
 
                                 <div class="d-inline-flex bd-highlight">
@@ -555,7 +546,7 @@
                                 Receita especialmente feita com dapibus ac facilisis in vestibulum at eros jras justo odio.
                             </p>
 
-                            <button type="button" class="btn btn-info"> Ler Mais </button>
+                            <button type="button" class="btn btn-light border-primary"> Ler Mais </button>
 														<div class="d-flex flex-row bd-highlight justify-content-between">
 
                                 <div class="d-inline-flex bd-highlight">
@@ -607,7 +598,7 @@
                                 Receita especialmente feita com dapibus ac facilisis in vestibulum at eros jras justo odio.
                             </p>
 
-                            <button type="button" class="btn btn-info"> Ler Mais </button>
+                            <button type="button" class="btn btn-light border-primary"> Ler Mais </button>
 														<div class="d-flex flex-row bd-highlight justify-content-between">
 
                                 <div class="d-inline-flex bd-highlight">
@@ -655,7 +646,7 @@
                                 Receita especialmente feita com dapibus ac facilisis in vestibulum at eros jras justo odio.
                             </p>
 
-                            <button type="button" class="btn btn-info"> Ler Mais </button>
+                            <button type="button" class="btn btn-light border-primary"> Ler Mais </button>
 														<div class="d-flex flex-row bd-highlight justify-content-between">
 
                                 <div class="d-inline-flex bd-highlight">
@@ -703,7 +694,7 @@
                                 Receita especialmente feita com dapibus ac facilisis in vestibulum at eros jras justo odio.
                             </p>
 
-                            <button type="button" class="btn btn-info"> Ler Mais </button>
+                            <button type="button" class="btn btn-light border-primary"> Ler Mais </button>
 														<div class="d-flex flex-row bd-highlight justify-content-between">
 
                                 <div class="d-inline-flex bd-highlight">
@@ -743,8 +734,8 @@
             <div id="MenuModal" class="modal fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="MenuModalTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
 
-                    <div class="modal-content border-info">
-                        <div class="modal-header bg-info">
+                    <div class="modal-content border-primary">
+                        <div class="modal-header bg-primary">
 
                             <h5 class="modal-title text-white" id="MenuModalTitle">
                                 Opções de conta:
@@ -756,7 +747,7 @@
                         </div>
                         <div class="modal-body">
 
-                            <a class="btn btn-lg btn-info btn-block my-4" href="perfil.html" role="button">
+                            <a class="btn btn-lg btn-primary btn-block my-4" href="perfil.html" role="button">
                                 <div class="row justify-content-md-center">
                                     <div class="col col-lg-1">
                                         <i class="fas fa-user-circle"></i>
@@ -767,7 +758,7 @@
                                 </div>
                             </a>
 
-                            <a class="btn btn-lg btn-info btn-block my-4" href="minhasReceitas.html" role="button">
+                            <a class="btn btn-lg btn-primary btn-block my-4" href="minhasReceitas.html" role="button">
                                 <div class="row justify-content-md-center">
                                     <div class="col col-lg-1">
                                         <i class="fas fa-star"></i>
@@ -778,7 +769,7 @@
                                 </div>
                             </a>
 
-                            <a class="btn btn-lg btn-info btn-block my-4" href="seguindo.html" role="button">
+                            <a class="btn btn-lg btn-primary btn-block my-4" href="seguindo.html" role="button">
                                 <div class="row justify-content-md-center">
                                     <div class="col col-lg-1">
                                         <i class="fas fa-users"></i>
@@ -789,7 +780,7 @@
                                 </div>
                             </a>
 
-                            <a class="btn btn-lg btn-info btn-block my-4" href="lista.html" role="button">
+                            <a class="btn btn-lg btn-primary btn-block my-4" href="lista.html" role="button">
                                 <div class="row justify-content-md-center">
                                     <div class="col col-lg-1">
                                         <i class="fas fa-clipboard-list"></i>
@@ -800,7 +791,7 @@
                                 </div>
                             </a>
 
-                            <a class="btn btn-lg btn-info btn-block my-4" href="#" role="button">
+                            <a class="btn btn-lg btn-primary btn-block my-4" href="#" role="button">
                                 <div class="row justify-content-md-center">
                                     <div class="col col-lg-1">
                                         <i class="fas fa-shopping-cart"></i>
@@ -811,7 +802,7 @@
                                 </div>
                             </a>
 
-                            <a class="btn btn-lg btn-info btn-block my-4" href="index.html" role="button">
+                            <a class="btn btn-lg btn-primary btn-block my-4" href="index.html" role="button">
                                 <div class="row justify-content-md-center">
                                     <div class="col col-lg-1">
                                         <i class="fas fa-user-check"></i>
@@ -822,7 +813,7 @@
                                 </div>
                             </a>
 
-                            <a class="btn btn-lg btn-info btn-block my-4" href="#" role="button">
+                            <a class="btn btn-lg btn-primary btn-block my-4" href="#" role="button">
                                 <div class="row justify-content-md-center">
                                     <div class="col col-lg-1">
                                         <i class="far fa-life-ring"></i>
@@ -833,7 +824,7 @@
                                 </div>
                             </a>
 
-                            <a class="btn btn-lg btn-info btn-block my-4" href="#" role="button">
+                            <a class="btn btn-lg btn-primary btn-block my-4" href="#" role="button">
                                 <div class="row justify-content-md-center">
                                     <div class="col col-lg-1">
                                         <i class="fas fa-money-bill-wave"></i>
@@ -853,9 +844,9 @@
         </div>
 
         <div id="footer">
-            <nav class="navbar navbar-light fixed-bottom navbarAcrylic">
+            <nav class="navbar navbar-light fixed-bottom navLight">
                 <a class="nav-item btn btn-lg" href="calorias.html">
-                    <i class="fas fa-fire"></i>
+                    <i class="fas fa-heartbeat"></i>
                 </a>
 
                 <a class="nav-item btn btn-lg" href="lista.html">
