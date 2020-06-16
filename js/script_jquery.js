@@ -113,7 +113,7 @@ $(document).ready(function(){
 			}
 		}
 		if(check==0){
-			$('#table-conteudo').html("<h4 class='name-product'>Nehum produto com esse nome</h4>");
+			$('#table-conteudo').html("<p class='name-product'>Nehum produto com esse nome</p>");
 
 		}
 	}
