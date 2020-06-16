@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
     <head>
-
         <title> Food Roster </title>
 
         <!-- Meta Tags -->
@@ -30,13 +29,10 @@
 
         <!-- Customized JS for this page -->
         <script type="text/javascript" src="js/script_jquery.js"></script>
-
     </head>
 
     <body class="bg-light">
-
-        <nav class="navbar navbar-light sticky-top navbarAcrylic">
-
+        <nav class="navbar navbar-light sticky-top navLight">
             <a class="nav-item btn btn-lg" role="button" href="#collapseSearch" data-toggle="collapse" aria-expanded="false" aria-controls="collapseSearch">
                 <i class="fas fa-search"></i>
             </a>
@@ -53,109 +49,86 @@
                     </div>
                 </div>
             </a>
-
         </nav>
+        
         <div id="collapseSearch" class="collapse">
             <div class="card">
                 <div class="card-header">
                     <div class="input-group">
-
                         <div class="input-group-prepend">
                             <button id="Search" class="btn input-group-text" type="button">
                                 <i class="fas fa-search"></i>
                             </button>
                         </div>
+
                         <input type="text" id="search-input" class="form-control" placeholder="Procure por uma Receita!" aria-label="search-area" aria-describedby="search-area"/>
-
                     </div>
                 </div>
             </div>
         </div>
 
-        <div id="info" class="container">
+        <br>
 
-            <div class="card my-4">
-                <div class="card-header">
-                    <a class="btn btn-link text-decoration-none text-reset" role="button" data-toggle="collapse" href="#collapseCategories" aria-expanded="false" aria-controls="collapseCategories">
-                        <h2 class="mb-0">
-                            Categorias
-                        </h2>
-                    </a>
-                </div>
-
-                <div id="collapseCategories" class="collapse">
-                    <div class="card-body">
-
-                        <div class="d-flex flex-wrap justify-content-around">
-                            <button type="button" class="btn btn-lg btn-outline-info"><i class="fas fa-pizza-slice"></i> Massas </button>
-                            <button type="button" class="btn btn-lg btn-outline-info"><i class="fas fa-drumstick-bite"></i> Carnes </button>
-                            <button type="button" class="btn btn-lg btn-outline-info"><i class="fas fa-cocktail"></i> Bebidas </button>
-                            <button type="button" class="btn btn-lg btn-outline-info"><i class="fas fa-carrot"></i> Vegana </button>
-                            <button type="button" class="btn btn-lg btn-outline-info"><i class="fas fa-leaf"></i> Saladas </button>
-                            <button type="button" class="btn btn-lg btn-outline-info"><i class="fas fa-hamburger"></i> Lanches </button>
-                            <button type="button" class="btn btn-lg btn-outline-info"><i class="fas fa-snowflake"></i> Frios </button>
-                            <button type="button" class="btn btn-lg btn-outline-info"><i class="fas fa-cookie-bite"></i> Sobremesas </button>
-                            <button type="button" class="btn btn-lg btn-outline-info"><i class="fas fa-plus"></i></button>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div id="spacing" class="container">
-            <hr class="my-4" />
+        <div id="categories" class="container p-3">
+            <ul class="hs full no-scrollbar">
+                <li class="item"><button type="button" class="btn btn-lg btn-outline-primary btn-block"><i class="fas fa-pizza-slice"></i> Massas </button></li>
+                <li class="item"><button type="button" class="btn btn-lg btn-outline-primary btn-block"><i class="fas fa-drumstick-bite"></i> Carnes </button></li>
+                <li class="item"><button type="button" class="btn btn-lg btn-outline-primary btn-block"><i class="fas fa-cocktail"></i> Bebidas </button></li>
+                <li class="item"><button type="button" class="btn btn-lg btn-outline-primary btn-block"><i class="fas fa-carrot"></i> Vegana </button></li>
+                <li class="item"><button type="button" class="btn btn-lg btn-outline-primary btn-block"><i class="fas fa-leaf"></i> Saladas </button></li>
+                <li class="item"><button type="button" class="btn btn-lg btn-outline-primary btn-block"><i class="fas fa-hamburger"></i> Lanches </button></li>
+                <li class="item"><button type="button" class="btn btn-lg btn-outline-primary btn-block"><i class="fas fa-snowflake"></i> Frios </button></li>
+                <li class="item"><button type="button" class="btn btn-lg btn-outline-primary btn-block"><i class="fas fa-cookie-bite"></i> Sobremesas </button></li>
+                <li class="item"><button type="button" class="btn btn-lg btn-outline-primary btn-block"><i class="fas fa-plus"></i></button></li>
+            </ul>
         </div>
 
         <div id="feed" class="container p-3">
-
-            <h2> Receitas </h2>
-
-            <div class="nav btn-group mx-auto" id="pills-tab" role="tablist" style="max-width: 350px">
-                <a class="nav-item nav-link btn btn-outline-info active" id="pills-recent-tab" data-toggle="pill" href="#pills-recent" role="tab" aria-controls="pills-recent" aria-selected="true">
+            <div class="nav btn-group mx-auto btn-group-sm" id="pills-tab" role="tablist" style="max-width: 350px">
+                <a class="nav-item nav-link btn btn-outline-primary active" id="pills-recent-tab" data-toggle="pill" href="#pills-recent" role="tab" aria-controls="pills-recent" aria-selected="true">
                     <i class="fas fa-concierge-bell"></i>
                     Recentes
                 </a>
 
-                <a class="nav-item nav-link btn btn-outline-info" id="pills-trending-tab" data-toggle="pill" href="#pills-trending" role="tab" aria-controls="pills-trending" aria-selected="false">
+                <a class="nav-item nav-link btn btn-outline-primary" id="pills-trending-tab" data-toggle="pill" href="#pills-trending" role="tab" aria-controls="pills-trending" aria-selected="false">
                     <i class="fas fa-poll"></i>
                     Destaques
                 </a>
 
-                <a class="nav-item nav-link btn btn-outline-info" id="pills-chefs-tab" data-toggle="pill" href="#pills-chefs" role="tab" aria-controls="pills-chefs" aria-selected="false">
+                <a class="nav-item nav-link btn btn-outline-primary" id="pills-chefs-tab" data-toggle="pill" href="#pills-chefs" role="tab" aria-controls="pills-chefs" aria-selected="false">
                     <i class="fas fa-wine-glass-alt"></i>
                     Chefs
                 </a>
             </div>
+
+            <br>
+
             <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-recent" role="tabpanel" aria-labelledby="pills-recent-tab">
 
-                    <div class="card my-4 mx-auto" style="max-width: 540px;">
+                    <div class="card mx-auto" style="max-width: 540px;">
                         <div class="card-header">
-
-														<div class="d-flex flex-row bd-highlight justify-content-between">
-
+							<div class="d-flex flex-row bd-highlight justify-content-between">
                                 <div class="d-inline-flex bd-highlight">
                                     <img class="avatar" src="assets/img/thumbnails/chef.jpg" style="width:50px; height:50px"/>
 
                                     <button type="button" class="btn btn-link text-reset"> Chef Dan Dan </button>
                                 </div>
-
                             </div>
-
                         </div>
-                        <img src="assets/img/produtos/Macarrao.jpeg" class="card-img-top" alt="..."/>
-                        <div class="card-body">
 
+                        <img src="assets/img/produtos/Macarrao.jpeg" class="card-img-top" alt="..."/>
+
+                        <div class="card-body">
                             <h5 class="card-title"> Macarrão com Shitake </h5>
+
                             <p class="card-text">
                                 Receita especialmente feita com dapibus ac facilisis in vestibulum at eros jras justo odio.
                             </p>
 
-														<button type="button" class="btn btn-info"> Ler Mais </button>
-														<div class="d-flex flex-row bd-highlight justify-content-between">
-
+                            <button type="button" class="btn btn-light border-primary"> Ler Mais </button>
+                            
+							<div class="d-flex flex-row bd-highlight justify-content-between">
                                 <div class="d-inline-flex bd-highlight">
                                     <p class="card-text pt-3"><small class="text-muted"> 3 minutos atrás </small></p>
                                 </div>
@@ -173,13 +146,11 @@
                                         <i class="fas fa-share-alt"></i>
                                     </button>
                                 </div>
-
-                            	</div>
-
+                            </div>
                         </div>
                     </div>
 
-                    <div class="card my-4 mx-auto" style="max-width: 540px;">
+                    <div class="card mx-auto" style="max-width: 540px;">
                         <div class="card-header">
 
                             <div class="d-flex flex-row bd-highlight justify-content-between">
@@ -201,7 +172,7 @@
                                 Receita especialmente feita com dapibus ac facilisis in vestibulum at eros jras justo odio.
                             </p>
 
-														<button type="button" class="btn btn-info"> Ler Mais </button>
+														<button type="button" class="btn btn-light border-primary"> Ler Mais </button>
 														<div class="d-flex flex-row bd-highlight justify-content-between">
 
                                 <div class="d-inline-flex bd-highlight">
@@ -227,7 +198,7 @@
                         </div>
                     </div>
 
-                    <div class="card my-4 mx-auto" style="max-width: 540px;">
+                    <div class="card mx-auto" style="max-width: 540px;">
                         <div class="card-header">
 
                             <div class="d-flex flex-row bd-highlight justify-content-between">
@@ -253,7 +224,7 @@
                                 Receita especialmente feita com dapibus ac facilisis in vestibulum at eros jras justo odio.
                             </p>
 
-														<button type="button" class="btn btn-info"> Ler Mais </button>
+														<button type="button" class="btn btn-light border-primary"> Ler Mais </button>
 														<div class="d-flex flex-row bd-highlight justify-content-between">
 
                                 <div class="d-inline-flex bd-highlight">
@@ -279,7 +250,7 @@
                         </div>
                     </div>
 
-                    <div class="card my-4 mx-auto" style="max-width: 540px;">
+                    <div class="card mx-auto" style="max-width: 540px;">
                         <div class="card-header">
 
                             <div class="d-flex flex-row bd-highlight justify-content-between">
@@ -301,7 +272,7 @@
                                 Receita especialmente feita com dapibus ac facilisis in vestibulum at eros jras justo odio.
                             </p>
 
-                            <button type="button" class="btn btn-info"> Ler Mais </button>
+                            <button type="button" class="btn btn-light border-primary"> Ler Mais </button>
 														<div class="d-flex flex-row bd-highlight justify-content-between">
 
                                 <div class="d-inline-flex bd-highlight">
@@ -330,7 +301,7 @@
                 </div>
                 <div class="tab-pane fade" id="pills-trending" role="tabpanel" aria-labelledby="pills-trending-tab">
 
-                    <div class="card my-4 mx-auto" style="max-width: 540px;">
+                    <div class="card mx-auto" style="max-width: 540px;">
                         <div class="card-header">
 
                             <div class="d-flex flex-row bd-highlight justify-content-between">
@@ -356,7 +327,7 @@
                                 Receita especialmente feita com dapibus ac facilisis in vestibulum at eros jras justo odio.
                             </p>
 
-														<button type="button" class="btn btn-info"> Ler Mais </button>
+														<button type="button" class="btn btn-light border-primary"> Ler Mais </button>
 														<div class="d-flex flex-row bd-highlight justify-content-between">
 
                                 <div class="d-inline-flex bd-highlight">
@@ -382,7 +353,7 @@
                         </div>
                     </div>
 
-                    <div class="card my-4 mx-auto" style="max-width: 540px;">
+                    <div class="card mx-auto" style="max-width: 540px;">
                         <div class="card-header">
 
                             <div class="d-flex flex-row bd-highlight justify-content-between">
@@ -404,7 +375,7 @@
                                 Receita especialmente feita com dapibus ac facilisis in vestibulum at eros jras justo odio.
                             </p>
 
-                            <button type="button" class="btn btn-info"> Ler Mais </button>
+                            <button type="button" class="btn btn-light border-primary"> Ler Mais </button>
 														<div class="d-flex flex-row bd-highlight justify-content-between">
 
                                 <div class="d-inline-flex bd-highlight">
@@ -430,7 +401,7 @@
                         </div>
                     </div>
 
-                    <div class="card my-4 mx-auto" style="max-width: 540px;">
+                    <div class="card mx-auto" style="max-width: 540px;">
                         <div class="card-header">
 
                             <div class="d-flex flex-row bd-highlight justify-content-between">
@@ -452,7 +423,7 @@
                                 Receita especialmente feita com dapibus ac facilisis in vestibulum at eros jras justo odio.
                             </p>
 
-                            <button type="button" class="btn btn-info"> Ler Mais </button>
+                            <button type="button" class="btn btn-light border-primary"> Ler Mais </button>
 														<div class="d-flex flex-row bd-highlight justify-content-between">
 
                                 <div class="d-inline-flex bd-highlight">
@@ -478,7 +449,7 @@
                         </div>
                     </div>
 
-                    <div class="card my-4 mx-auto" style="max-width: 540px;">
+                    <div class="card mx-auto" style="max-width: 540px;">
                         <div class="card-header">
 
                             <div class="d-flex flex-row bd-highlight justify-content-between">
@@ -504,7 +475,7 @@
                                 Receita especialmente feita com dapibus ac facilisis in vestibulum at eros jras justo odio.
                             </p>
 
-                            <button type="button" class="btn btn-info"> Ler Mais </button>
+                            <button type="button" class="btn btn-light border-primary"> Ler Mais </button>
 														<div class="d-flex flex-row bd-highlight justify-content-between">
 
                                 <div class="d-inline-flex bd-highlight">
@@ -533,7 +504,7 @@
                 </div>
                 <div class="tab-pane fade" id="pills-chefs" role="tabpanel" aria-labelledby="pills-chefs-tab">
 
-                    <div class="card my-4 mx-auto" style="max-width: 540px;">
+                    <div class="card mx-auto" style="max-width: 540px;">
                         <div class="card-header">
 
                             <div class="d-flex flex-row bd-highlight justify-content-between">
@@ -555,7 +526,7 @@
                                 Receita especialmente feita com dapibus ac facilisis in vestibulum at eros jras justo odio.
                             </p>
 
-                            <button type="button" class="btn btn-info"> Ler Mais </button>
+                            <button type="button" class="btn btn-light border-primary"> Ler Mais </button>
 														<div class="d-flex flex-row bd-highlight justify-content-between">
 
                                 <div class="d-inline-flex bd-highlight">
@@ -581,7 +552,7 @@
                         </div>
                     </div>
 
-                    <div class="card my-4 mx-auto" style="max-width: 540px;">
+                    <div class="card mx-auto" style="max-width: 540px;">
                         <div class="card-header">
 
                             <div class="d-flex flex-row bd-highlight justify-content-between">
@@ -607,7 +578,7 @@
                                 Receita especialmente feita com dapibus ac facilisis in vestibulum at eros jras justo odio.
                             </p>
 
-                            <button type="button" class="btn btn-info"> Ler Mais </button>
+                            <button type="button" class="btn btn-light border-primary"> Ler Mais </button>
 														<div class="d-flex flex-row bd-highlight justify-content-between">
 
                                 <div class="d-inline-flex bd-highlight">
@@ -633,7 +604,7 @@
                         </div>
                     </div>
 
-                    <div class="card my-4 mx-auto" style="max-width: 540px;">
+                    <div class="card mx-auto" style="max-width: 540px;">
                         <div class="card-header">
 
                             <div class="d-flex flex-row bd-highlight justify-content-between">
@@ -655,7 +626,7 @@
                                 Receita especialmente feita com dapibus ac facilisis in vestibulum at eros jras justo odio.
                             </p>
 
-                            <button type="button" class="btn btn-info"> Ler Mais </button>
+                            <button type="button" class="btn btn-light border-primary"> Ler Mais </button>
 														<div class="d-flex flex-row bd-highlight justify-content-between">
 
                                 <div class="d-inline-flex bd-highlight">
@@ -681,7 +652,7 @@
                         </div>
                     </div>
 
-                    <div class="card my-4 mx-auto" style="max-width: 540px;">
+                    <div class="card mx-auto" style="max-width: 540px;">
                         <div class="card-header">
 
                             <div class="d-flex flex-row bd-highlight justify-content-between">
@@ -703,7 +674,7 @@
                                 Receita especialmente feita com dapibus ac facilisis in vestibulum at eros jras justo odio.
                             </p>
 
-                            <button type="button" class="btn btn-info"> Ler Mais </button>
+                            <button type="button" class="btn btn-light border-primary"> Ler Mais </button>
 														<div class="d-flex flex-row bd-highlight justify-content-between">
 
                                 <div class="d-inline-flex bd-highlight">
@@ -743,119 +714,127 @@
             <div id="MenuModal" class="modal fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="MenuModalTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
 
-                    <div class="modal-content border-info">
-                        <div class="modal-header bg-info">
-
-                            <h5 class="modal-title text-white" id="MenuModalTitle">
+                    <div class="modal-content navLight">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-dark" id="MenuModalTitle">
                                 Opções de conta:
                             </h5>
+
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
-
                         </div>
-                        <div class="modal-body">
 
-                            <a class="btn btn-lg btn-info btn-block my-4" href="perfil.html" role="button">
-                                <div class="row justify-content-md-center">
-                                    <div class="col col-lg-1">
+                        <div id="spacing" class="container">
+                            <hr class="my-4" />
+                        </div>
+
+                        <div class="modal-body">
+                            <a class="btn btn-outline-primary btn-block" href="perfil.html" role="button">
+                                <div class="row">
+                                    <div class="col col-md-auto text-left">
                                         <i class="fas fa-user-circle"></i>
                                     </div>
-                                    <div class="col align-self-center" style="margin-right:100px">
+                                    
+                                    <div class="col col-md-auto text-right">
                                         Meu perfil
                                     </div>
                                 </div>
                             </a>
 
-                            <a class="btn btn-lg btn-info btn-block my-4" href="minhasReceitas.html" role="button">
-                                <div class="row justify-content-md-center">
-                                    <div class="col col-lg-1">
+                            <a class="btn btn-outline-primary btn-block" href="minhasReceitas.html" role="button">
+                                <div class="row">
+                                    <div class="col col-md-auto text-left">
                                         <i class="fas fa-star"></i>
                                     </div>
-                                    <div class="col align-self-center" style="margin-right:100px">
+
+                                    <div class="col col-md-auto text-right">
                                         Receitas Salvas
                                     </div>
                                 </div>
                             </a>
 
-                            <a class="btn btn-lg btn-info btn-block my-4" href="seguindo.html" role="button">
-                                <div class="row justify-content-md-center">
-                                    <div class="col col-lg-1">
+                            <a class="btn btn-outline-primary btn-block" href="seguindo.html" role="button">
+                                <div class="row">
+                                    <div class="col col-md-auto text-left">
                                         <i class="fas fa-users"></i>
                                     </div>
-                                    <div class="col align-self-center" style="margin-right:100px">
+
+                                    <div class="col col-md-auto text-right">
                                         Seguindo
                                     </div>
                                 </div>
                             </a>
 
-                            <a class="btn btn-lg btn-info btn-block my-4" href="lista.html" role="button">
-                                <div class="row justify-content-md-center">
-                                    <div class="col col-lg-1">
+                            <a class="btn btn-outline-primary btn-block" href="lista.html" role="button">
+                                <div class="row">
+                                    <div class="col col-md-auto text-left">
                                         <i class="fas fa-clipboard-list"></i>
                                     </div>
-                                    <div class="col align-self-center" style="margin-right:100px">
+
+                                    <div class="col col-md-auto text-right">
                                         Lista
                                     </div>
                                 </div>
                             </a>
 
-                            <a class="btn btn-lg btn-info btn-block my-4" href="#" role="button">
-                                <div class="row justify-content-md-center">
-                                    <div class="col col-lg-1">
+                            <a class="btn btn-outline-primary btn-block" href="#" role="button">
+                                <div class="row">
+                                    <div class="col col-md-auto text-left">
                                         <i class="fas fa-shopping-cart"></i>
                                     </div>
-                                    <div class="col align-self-center" style="margin-right:100px">
+
+                                    <div class="col col-md-auto text-right">
                                         Carrinho
                                     </div>
                                 </div>
                             </a>
 
-                            <a class="btn btn-lg btn-info btn-block my-4" href="index.html" role="button">
-                                <div class="row justify-content-md-center">
-                                    <div class="col col-lg-1">
+                            <a class="btn btn-outline-primary btn-block" href="index.html" role="button">
+                                <div class="row">
+                                    <div class="col col-md-auto text-left">
                                         <i class="fas fa-user-check"></i>
                                     </div>
-                                    <div class="col align-self-center" style="margin-right:100px">
+
+                                    <div class="col col-md-auto text-right">
                                         Seja um chef
                                     </div>
                                 </div>
                             </a>
 
-                            <a class="btn btn-lg btn-info btn-block my-4" href="#" role="button">
-                                <div class="row justify-content-md-center">
-                                    <div class="col col-lg-1">
+                            <a class="btn btn-outline-primary btn-block" href="#" role="button">
+                                <div class="row">
+                                    <div class="col col-md-auto text-left">
                                         <i class="far fa-life-ring"></i>
                                     </div>
-                                    <div class="col align-self-center" style="margin-right:100px">
+
+                                    <div class="col col-md-auto text-right">
                                         Ajuda
                                     </div>
                                 </div>
                             </a>
 
-                            <a class="btn btn-lg btn-info btn-block my-4" href="#" role="button">
-                                <div class="row justify-content-md-center">
-                                    <div class="col col-lg-1">
+                            <a class="btn btn-outline-primary btn-block" href="#" role="button">
+                                <div class="row">
+                                    <div class="col col-md-auto text-left">
                                         <i class="fas fa-money-bill-wave"></i>
                                     </div>
-                                    <div class="col align-self-center" style="margin-right:100px">
+
+                                    <div class="col col-md-auto text-right">
                                         Doações
                                     </div>
                                 </div>
                             </a>
-
                         </div>
                     </div>
-
                 </div>
             </div>
-
         </div>
 
         <div id="footer">
-            <nav class="navbar navbar-light fixed-bottom navbarAcrylic">
+            <nav class="navbar navbar-light fixed-bottom navLight">
                 <a class="nav-item btn btn-lg" href="calorias.html">
-                    <i class="fas fa-fire"></i>
+                    <i class="fas fa-heartbeat"></i>
                 </a>
 
                 <a class="nav-item btn btn-lg" href="lista.html">
