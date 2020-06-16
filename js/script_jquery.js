@@ -1,32 +1,30 @@
 $(document).ready(function(){
-	$('#modal-container').hide();
+	$('#cart').hide();
 	
-	var conteudo = document.getElementById('add-coisa');
+	var conteudo = document.getElementById('item-list');
 	var show=parseInt('0');
-	$(document).on('click','#card-food',function(){
+	$(document).on('click','#food-cart',function(){
        if(show != 0){
-        $('#modal-container').show();
+        $('#cart').show();
         //conteudo.innerHTML= vetor[i-1];
         if(i==0){
-        	conteudo.innerHTML="<p>Card vazio</p>";
+        	conteudo.innerHTML="<h4> Ainda não temos uma receita ao carrinho! </h4>";
+        } else {
 
-        }
-
-        else{
-
-        var aux="<tr><td>Seu carrinho:</td></tr>";
+        var aux="<tr><td> Seu carrinho: </td></tr>";
         var j= parseInt('0');
         
         for(j=0;j<i;j++){
         	aux= aux + ("<tr><td><img class='imagem-produto' src=assets/img/produtos/"+vetor[j]+".jpeg></td><td><p>"+vetor[j]+"</p></td></tr>");
         }
         conteudo.innerHTML=aux;
+
     }
         show--;
 	}
 
     else{
-    	 $('#modal-container').hide();
+    	 $('#cart').hide();
     	 show++;
     }
        });
@@ -38,7 +36,7 @@ $(document).ready(function(){
 		});
 
 	$(document).on('click','.close', function(){
-		$('#modal-container').hide();
+		$('#cart').hide();
 	});
 
 	var card= new Array();
