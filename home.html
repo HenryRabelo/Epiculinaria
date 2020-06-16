@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
     <head>
-
         <title> Food Roster </title>
 
         <!-- Meta Tags -->
@@ -30,7 +29,6 @@
 
         <!-- Customized JS for this page -->
         <script type="text/javascript" src="js/script_jquery.js"></script>
-
     </head>
 
     <body class="bg-light">
@@ -57,49 +55,32 @@
             <div class="card">
                 <div class="card-header">
                     <div class="input-group">
-
                         <div class="input-group-prepend">
                             <button id="Search" class="btn input-group-text" type="button">
                                 <i class="fas fa-search"></i>
                             </button>
                         </div>
-                        <input type="text" id="search-input" class="form-control" placeholder="Procure por uma Receita!" aria-label="search-area" aria-describedby="search-area"/>
 
+                        <input type="text" id="search-input" class="form-control" placeholder="Procure por uma Receita!" aria-label="search-area" aria-describedby="search-area"/>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div id="primary" class="container">
+        <br><br>
 
-            <div class="card my-4">
-                <div class="card-header">
-                    <a class="btn btn-link text-decoration-none text-reset" role="button" data-toggle="collapse" href="#collapseCategories" aria-expanded="false" aria-controls="collapseCategories">
-                        <h2 class="mb-0">
-                            Categorias
-                        </h2>
-                    </a>
-                </div>
-
-                <div id="collapseCategories" class="collapse">
-                    <div class="card-body">
-
-                        <div class="d-flex flex-wrap justify-content-around">
-                            <button type="button" class="btn btn-lg btn-outline-primary"><i class="fas fa-pizza-slice"></i> Massas </button>
-                            <button type="button" class="btn btn-lg btn-outline-primary"><i class="fas fa-drumstick-bite"></i> Carnes </button>
-                            <button type="button" class="btn btn-lg btn-outline-primary"><i class="fas fa-cocktail"></i> Bebidas </button>
-                            <button type="button" class="btn btn-lg btn-outline-primary"><i class="fas fa-carrot"></i> Vegana </button>
-                            <button type="button" class="btn btn-lg btn-outline-primary"><i class="fas fa-leaf"></i> Saladas </button>
-                            <button type="button" class="btn btn-lg btn-outline-primary"><i class="fas fa-hamburger"></i> Lanches </button>
-                            <button type="button" class="btn btn-lg btn-outline-primary"><i class="fas fa-snowflake"></i> Frios </button>
-                            <button type="button" class="btn btn-lg btn-outline-primary"><i class="fas fa-cookie-bite"></i> Sobremesas </button>
-                            <button type="button" class="btn btn-lg btn-outline-primary"><i class="fas fa-plus"></i></button>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
+        <div id="categories" class="container p-3">
+            <ul class="hs full no-scrollbar">
+                <li class="item"><button type="button" class="btn btn-lg btn-outline-primary btn-block"><i class="fas fa-pizza-slice"></i> Massas </button></li>
+                <li class="item"><button type="button" class="btn btn-lg btn-outline-primary btn-block"><i class="fas fa-drumstick-bite"></i> Carnes </button></li>
+                <li class="item"><button type="button" class="btn btn-lg btn-outline-primary btn-block"><i class="fas fa-cocktail"></i> Bebidas </button></li>
+                <li class="item"><button type="button" class="btn btn-lg btn-outline-primary btn-block"><i class="fas fa-carrot"></i> Vegana </button></li>
+                <li class="item"><button type="button" class="btn btn-lg btn-outline-primary btn-block"><i class="fas fa-leaf"></i> Saladas </button></li>
+                <li class="item"><button type="button" class="btn btn-lg btn-outline-primary btn-block"><i class="fas fa-hamburger"></i> Lanches </button></li>
+                <li class="item"><button type="button" class="btn btn-lg btn-outline-primary btn-block"><i class="fas fa-snowflake"></i> Frios </button></li>
+                <li class="item"><button type="button" class="btn btn-lg btn-outline-primary btn-block"><i class="fas fa-cookie-bite"></i> Sobremesas </button></li>
+                <li class="item"><button type="button" class="btn btn-lg btn-outline-primary btn-block"><i class="fas fa-plus"></i></button></li>
+            </ul>
         </div>
 
         <div id="spacing" class="container">
@@ -123,6 +104,7 @@
                     Chefs
                 </a>
             </div>
+
             <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-recent" role="tabpanel" aria-labelledby="pills-recent-tab">
 
