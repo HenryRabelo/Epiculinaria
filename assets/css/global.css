@@ -114,3 +114,12 @@
   .no-scrollbar::-webkit-scrollbar {
     display: none;
   }
+    #table-search{
+    background-color: #80808000;
+    border: 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(0, 0, 0, 0.2);
+    height: 40px;
+  }
+  #product-name{
+    width: 100%;
+  }
