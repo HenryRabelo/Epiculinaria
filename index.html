@@ -66,23 +66,16 @@
                         <div class="form-group">
                             <label for="exampleInputPassword1">Senha</label>
                             <input type="password" class="form-control border-primary" id="exampleInputPassword1"/>
+                            <a href="#" class="badge">Esqueci minha senha</a>
                         </div>
-                        <button type="submit" class="btn btn-block btn-primary">Entrar</button>
+                        <button type="submit" class="btn btn-block btn-outline-primary">Entrar</button>
                     </form>
 
                     <br>
                     <p class="text-center">Não é cadastrado ainda? <a href="#" class="badge" data-toggle="modal" data-target="#RegisterModal">Cadastre-se!</a></p>
 
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm text-center">
-                                <a href="#" class="badge badge-info">Esqueci minha senha</a>
-                            </div>
-
-                            <div class="col-sm text-center">
-                                <a href="home.html" class="badge badge-info">Entrar sem cadastro</a>
-                            </div>
-                        </div>
+                    <div class="container text-center">
+                        <a href="home.html" class="badge">Entrar sem cadastro</a>
                     </div>
 
                     <div id="spacing" class="container">
@@ -91,12 +84,12 @@
 
                     <div class="container">
                         <div class="row">
-                            <div class="col-sm">
-                                <button type="submit" class="btn btn-block btn-primary"><i class="fab fa-microsoft"></i> Entrar com Microsoft</button>
+                            <div class="col col-md-auto">
+                                <button type="submit" class="btn btn-block btn-outline-primary"><i class="fab fa-microsoft"></i><br> Entrar com Microsoft</button>
                             </div>
 
-                            <div class="col-sm">
-                                <button type="submit" class="btn btn-block btn-primary"><i class="fab fa-apple"></i> Entrar com Apple</button>
+                            <div class="col col-md-auto">
+                                <button type="submit" class="btn btn-block btn-outline-primary"><i class="fab fa-apple"></i><br> Entrar com Apple</button>
                             </div>
                         </div>
                     </div>
@@ -105,12 +98,12 @@
 
                     <div class="container">
                         <div class="row">
-                            <div class="col-sm">
-                                <button type="submit" class="btn btn-block btn-primary"><i class="fab fa-google"></i> Entrar com Google</button>
+                            <div class="col col-md-auto">
+                                <button type="submit" class="btn btn-block btn-outline-primary"><i class="fab fa-google"></i><br> Entrar com Google</button>
                             </div>
 
-                            <div class="col-sm">
-                                <button type="submit" class="btn btn-block btn-primary"><i class="fab fa-facebook-f"></i> Entrar com Facebook</button>
+                            <div class="col col-md-auto">
+                                <button type="submit" class="btn btn-block btn-outline-primary"><i class="fab fa-facebook-f"></i><br> Entrar com Facebook</button>
                             </div>
                         </div>
                     </div>
@@ -122,85 +115,71 @@
         </div>
 
         <div id="modals" class="container">
-
             <div id="RegisterModal" class="modal fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="RegisterModalTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
-
+                    
                     <div class="modal-content navLight">
                         <div class="modal-header">
-
                             <h5 class="modal-title text-dark" id="RegisterModalTitle"> Crie uma Conta! </h5>
+                            
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
-
                         </div>
+
+                        <div id="spacing" class="container">
+                            <hr class="my-4" />
+                        </div>
+
                         <div class="modal-body">
-
-                            <div class="container">
-
-                                <form class="needs-validation" novalidate="">
-                                    <div class="row">
-                                        <div class="col-md-6 mb-3">
-                                            <label for="firstName"> Primeiro Nome </label>
-                                            <input type="text" class="form-control border-primary" id="firstName" placeholder="" value="" required=""/>
-                                            <div class="invalid-feedback">
-                                                O primeiro nome é necessário.
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 mb-3">
-                                            <label for="lastName"> Último Sobrenome </label>
-                                            <input type="text" class="form-control border-primary" id="lastName" placeholder="" value="" required=""/>
-                                            <div class="invalid-feedback">
-                                                O último sobrenome é necessário.
-                                            </div>
-                                        </div>
-                                    </div>
-
+                            <form class="needs-validation" novalidate="">
                                     <div class="mb-3">
-                                        <label for="username"> Nome de Usuário </label>
-                                        <div class="input-group">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text">@</span>
-                                            </div>
-                                            <input type="text" class="form-control border-primary" id="username" placeholder="Nome de Usuário" required=""/>
-                                            <div class="invalid-feedback" style="width: 100%;">
-                                                O seu nome de usuário é necessário.
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="mb-3">
-                                        <label for="email"> Email </label>
-                                        <input type="email" class="form-control border-primary" id="email" placeholder="chef@email.com" required=""/>
+                                        <label for="firstName"> Nome completo </label>
+                                        <input type="text" class="form-control border-primary" id="firstName" placeholder="" value="" required=""/>
                                         <div class="invalid-feedback">
-                                            Por favor, adicione um email válido.
+                                            Seu nome é necessário.
                                         </div>
                                     </div>
 
-                                    <div class="mb-3">
-                                        <label for="password"> Senha </label>
-                                        <input type="password" class="form-control border-primary" id="password" required=""/>
-                                        <div class="invalid-feedback">
-                                            Por favor, adicione uma senha válida.
+                                <div class="mb-3">
+                                    <label for="username"> Nome de Usuário </label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">@</span>
+                                        </div>
+                                        <input type="text" class="form-control border-primary" id="username" placeholder="Nome de Usuário" required=""/>
+                                        <div class="invalid-feedback" style="width: 100%;">
+                                            O seu nome de usuário é necessário.
                                         </div>
                                     </div>
+                                </div>
 
-                                </form>
+                                <div class="mb-3">
+                                    <label for="email"> Email </label>
+                                    <input type="email" class="form-control border-primary" id="email" placeholder="chef@email.com" required=""/>
+                                    <div class="invalid-feedback">
+                                        Por favor, adicione um email válido.
+                                    </div>
+                                </div>
 
-                            </div>
-
+                                <div class="mb-3">
+                                    <label for="password"> Senha </label>
+                                    <input type="password" class="form-control border-primary" id="password" required=""/>
+                                    <div class="invalid-feedback">
+                                        Por favor, adicione uma senha válida.
+                                    </div>
+                                </div>
+                            </form>
                         </div>
-                        <div class="modal-footer">
 
-                            <button class="btn btn-light border-primary btn-lg btn-block" type="submit">
+                        <div class="modal-footer">
+                            <button class="btn btn-outline-primary btn-block" type="submit">
                                 Enviar Ticket! <i class="fas fa-concierge-bell"></i>
                             </button>
 
-                            <button class="btn btn-light border-primary btn-lg btn-block" type="submit">
+                            <button class="btn btn-outline-primary btn-block" type="submit">
                                 Já possui conta?
                             </button>
-
                         </div>
                     </div>
 
