@@ -43,40 +43,23 @@
 }
 
 .navLight{
-    background-color: #ffffffc5;
-    box-shadow: 0 0 50px;
-    background-image: url('http://api.thumbr.it/whitenoise-361x370.png?background=ffffff00&noise=a0a0a0&density=35&opacity=10');
-    backdrop-filter: blur(20px);
-}
-
-.navDark{
-    background-color: #313131c5;
+    background-color: #ffffffe7;
     box-shadow: 0 0 50px;
     background-image: url('http://api.thumbr.it/whitenoise-361x370.png?background=ffffff00&noise=a0a0a0&density=35&opacity=10');
     backdrop-filter: blur(5px);
 }
 
 .circleDivLight{
-    background-color: #ffffffc5;
+    background-color: #ffffffe7;
     border-radius: 50%;
     box-shadow: 0 0 50px;
     background-image: url('http://api.thumbr.it/whitenoise-361x370.png?background=ffffff00&noise=a0a0a0&density=35&opacity=10');
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(5px);
     text-align: center;
     width: 300px;
     height: 300px;
 }
 
-.circleDivDark{
-    background-color: #313131c5;
-    border-radius: 50%;
-    box-shadow: 0 0 50px;
-    background-image: url('http://api.thumbr.it/whitenoise-361x370.png?background=ffffff00&noise=a0a0a0&density=35&opacity=10');
-    backdrop-filter: blur(20px);
-    text-align: center;
-    width: 300px;
-    height: 300px;
-}
 
 .loginBackground{
     background-image: url('../../assets/img/background.jpg');
