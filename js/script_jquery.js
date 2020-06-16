@@ -75,8 +75,58 @@ $(document).ready(function(){
 
 		}
 
-    	alert("Inseriu");
+    	//alert("Inseriu");
 
 	});
+	$('#table-search').hide();
+	var vetor_aux=['macarrao','pizza','batata','pudim'];
+	$(document).keypress(function(e){
+		//alert(e.which);
+	var search =document.getElementById('search-input').value;
+	var word_aux=String.fromCharCode(e.keyCode);
+	var check = parseInt('0');
+	var aux_search=search + word_aux;
+	//alert(aux_search);
+	if(search!=''){
+		$('#table-search').show();
+		/*var table=getElementById("table-conteudo");"btn btn-light"
+		table.innerHTML="<p>t(document).keypress(function(e)este</p>";*/
+		var nome;
+		var j=parseInt('0');
+		for(j=0;j<4;j++){
+			if(aux_search==vetor_aux[j]){
+				if(j==0){
+					nome="Macarrão";	
+				}
+				if(j==1){
+					nome="Pizza";	
+				}
+				if(j==2){
+					nome="Batata";	
+				}
+				if(j==3){
+					nome="Pudim";	
+				}
+			c= ("<tr><td><img class='imagem-produto' src=assets/img/produtos/"+vetor_aux[j]+".jpeg></td><td id='product-name'><h4>"+nome+"</h4></td><td><button id='add-produto' class='btn btn-light'>+</button></td></tr>");
+			$('#table-conteudo').html(c);
+			check++;
+			}
+		}
+		if(check==0){
+			$('#table-conteudo').html("<h4 class='name-product'>Nehum produto com esse nome</h4>");
 
+		}
+	}
+
+	});
+	$(document).on('click','#add-produto',function(){
+		$('#Search').click();
+	});
+	$(document).keydown(function(e){
+		if(e.which==8){
+			if(document.getElementById('search-input').value==''){
+				$('#table-search').hide();
+			}
+		}
+	});
 });
